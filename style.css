@@ -76,6 +76,8 @@ html,body{
   
   .msg {
     margin: 2rem 0 2rem 0;
+    color: rgb(139, 24, 24);
+    font-weight: 700;
   }
   
   form button {
@@ -84,4 +86,29 @@ html,body{
     color: #fff;
     font-size: 1.15rem;
     cursor: pointer;
+  }
+
+  @media (max-width: 726px) {
+    .container {
+      min-height: 45vh;
+      width: 55vw;
+    }
+  }
+  @media (max-width: 572px) {
+    .container {
+      min-height: 45vh;
+      width: 75vw;
+    }
+  }
+  @media (max-width: 414px) {
+    .container {
+      min-height: 45vh;
+      width: 85vw;
+    }
+  }
+  @media (max-width: 358px) {
+    .container {
+      min-height: 45vh;
+      width: 100vw;
+    }
   }

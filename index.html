@@ -16,10 +16,10 @@
   <body>
     <div class="container">
       <h2>Currency Converter</h2>
-      <form>
+      <form id="currency-form">
         <div class="amount">
           <p>Enter Amount</p>
-          <input value="1" type="text" />
+          <input id="amount" value="1" type="text" />
         </div>
         <div class="dropdown">
           <div class="from">
@@ -27,7 +27,7 @@
             <div class="select-container">
               <img src="https://flagsapi.com/US/flat/64.png" />
               <select id="from" name="from">
-                <option value=""></option>
+              
               </select>
             </div>
           </div>
@@ -35,13 +35,13 @@
           <div class="to">
             <p>To</p>
             <div class="select-container">
-              <img src="https://flagsapi.com/IN/flat/64.png" />
+              <img src="https://flagsapi.com/PK/flat/64.png" />
               <select id="to" name="to"></select>
             </div>
           </div>
         </div>
-        <div class="msg">1 USD = 277 PKR</div>
-        <button>Get Exchange Rate</button>
+        <div class="msg" id="conversion-result"></div>
+        <button id="convert-button">Get Exchange Rate</button>
       </form>
     </div>
     <script src="codes.js"></script>
